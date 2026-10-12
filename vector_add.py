@@ -29,3 +29,6 @@ if __name__ == "__main__":
     out = add(x, y)
     print(f"torch {torch.__version__}, triton {triton.__version__}, gpu {torch.cuda.get_device_name()}")
     print("max diff:", torch.max(torch.abs(out - (x + y))).item())
+
+
+
